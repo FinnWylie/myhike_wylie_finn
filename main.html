@@ -12,6 +12,7 @@
     <!-- Web Components for shared navbar and footer layout -->
      <script type="module" src="/src/components/site-navbar.js"></script>
      <script type="module" src="/src/components/site-footer.js"></script>
+
 </head>
 
 <body>
@@ -23,6 +24,13 @@
     <site-navbar></site-navbar>
 
     <!-- Main content goes here -->
+    <div class="container-fluid bg-light text-dark p-5">
+        <div class="container bg-light p-5">
+            <h1 class="display-4">Greetings <span id="name-goes-here">friend </span> </h1>
+            <hr>
+            <p>Quote of the day: something insightful goes here.</p>
+        </div>
+    </div>
 
     <!-- our own footer goes here -->
     <site-footer></site-footer>
@@ -32,6 +40,7 @@
     <!---------------------------------------------->
 
     <script type="module" src="/src/app.js"></script>
+    <script type="module" src="/src/main.js"></script>
 
 </body>
 
