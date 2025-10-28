@@ -28,9 +28,22 @@
         <div class="container bg-light p-5">
             <h1 class="display-4">Greetings <span id="name-goes-here">friend </span> </h1>
             <hr>
-            <p>Quote of the day: something insightful goes here.</p>
+            <p>Quote of the day: <span id="quote-goes-here"></span></p>
         </div>
     </div>
+
+    <template id="hikeCardTemplate">
+        <div class="col">
+            <div class="card">
+                <img class="card-img-top card-image" src="..." alt="Hike Image">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <p>Length: <span class="card-length"></span> km</p>
+                </div>
+            </div>
+        </div>
+    </template>
 
     <!-- our own footer goes here -->
     <site-footer></site-footer>
