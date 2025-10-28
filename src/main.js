@@ -60,9 +60,6 @@ async function seedHikes() {
     }
 }
 
-// Call the seeding function when the main.html page loads.
-seedHikes();
-
 
 async function displayCardsDynamically() {
     let cardTemplate = document.getElementById("hikeCardTemplate");
@@ -80,8 +77,9 @@ async function displayCardsDynamically() {
             newcard.querySelector('.card-text').textContent = hike.details || `Located in ${hike.city}.`;
             newcard.querySelector('.card-length').textContent = hike.length;
 
-            // 👇 ADD THIS LINE TO SET THE IMAGE SOURCE
+
             newcard.querySelector('.card-image').src = `./images/${hike.code}.jpg`;
+            newcard.querySelector(".read-more").href = `eachHike.html?docID=${doc.id}`;
 
             // Attach the new card to the container
             document.getElementById("hikes-go-here").appendChild(newcard);
@@ -94,6 +92,10 @@ async function displayCardsDynamically() {
 
 // Call the function to display cards when the page loads
 displayCardsDynamically();
+
+
+// Call the seeding function when the main.html page loads.
+seedHikes();
 
 
 readQuote("tuesday");
