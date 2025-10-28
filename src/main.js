@@ -22,9 +22,6 @@ function readQuote(day) {
 }
 
 
-readQuote("tuesday");
-
-
 // Helper function to add the sample hike documents.
 function addHikeData() {
     const hikesRef = collection(db, "hikes");
@@ -97,6 +94,9 @@ async function displayCardsDynamically() {
 
 // Call the function to display cards when the page loads
 displayCardsDynamically();
+
+
+readQuote("tuesday");
 
 
 function showDashboard() {
